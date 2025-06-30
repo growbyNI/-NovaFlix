@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaFlix - Watch & Share Unlimited Videos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaFlix - Watch & Share Unlimited Videos</title>
+  <meta name="description"
+    content="NovaFlix is a next-gen video sharing platform where you can upload, watch, and explore trending content. Discover creators and stream videos like never before.">
+  <meta name="keywords"
+    content="NovaFlix, video sharing, watch videos, upload videos, video platform, free streaming, YouTube alternative, trending videos">
+  <meta name="author" content="NovaFlix Team">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="NovaFlix - Watch & Share Unlimited Videos">
+  <meta property="og:description" content="Upload and stream videos on NovaFlix – the future of video content.">
+  <meta property="og:image" content="https://yourdomain.com/assets/preview.jpg"> <!-- Replace with your image -->
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NovaFlix - Watch & Share Unlimited Videos">
+  <meta name="twitter:description" content="Upload and stream videos on NovaFlix – the future of video content.">
+  <meta name="twitter:image" content="https://yourdomain.com/assets/preview.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- starting loader -->
+  <div id="Starting-loader" class="starting-loader">
+    <div class="loader-full">
+      <div class="play-btn"></div>
+      <div class="loader-container">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <main id="main-container" style="display: none;">
+    <div class="header-container">
+      <h1>NovaFlix</h1>
+      <div class="bell-container">
+        <i class="fas fa-bell"></i>
+      </div>
+      <div class="search-aling">
+        <div id="search-btn" class="search-icon"></div>
+      </div>
+    </div>
+    <div class="category-container">
+      <button class="category active">All</button>
+      <button class="category">Trending</button>
+      <button class="category">Music</button>
+      <button class="category">Movies</button>
+      <button class="category">Gaming</button>
+      <button class="category">News</button>
+      <button class="category">Tech</button>
+      <!-- Add more as needed -->
+    </div>
+    
+    <!-- short container -->
+     <!-- Shorts Grid -->
+<section class="shorts-section">
+  <h2 class="shorts-title">Shorts</h2>
+  <div class="shorts-container">
+    <div class="short-card" data-src="short1.mp4">
+      <video src="http://v-chat-l0ng.onrender.com/files/1751200486704_the-system.mp4" muted autoplay loop></video>
+      <p class="short-title">Epic Trick Shot</p>
+    </div>
+    <div class="short-card" data-src="short2.mp4">
+      <video src="http://v-chat-l0ng.onrender.com/files/1751267854010_Money________youtubeshorts__motivation__mindset__tre_720P_HD_.mp4" muted autoplay loop></video>
+      <p class="short-title">Funny Cat Moment</p>
+    </div>
+    <div class="short-card" data-src="short3.mp4">
+      <video src="http://v-chat-l0ng.onrender.com/files/1751201070063_MOTIVATIONAL_LINES_____discipline__motivation__quotes__billionaire__success__mindset__shorts_720P_HD__1.mp4" muted autoplay loop></video>
+      <p class="short-title">Dance in 15 sec</p>
+    </div>
+  </div>
+</section>
+
+<!-- Short Viewer Modal -->
+<div class="short-viewer" id="shortViewer">
+  <button class="close-btn" onclick="closeShortViewer()">🡐</button>
+  <video id="shortViewerVideo" autoplay></video>
+</div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
